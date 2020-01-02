@@ -27,6 +27,11 @@ export namespace ipfs {
   }
 }
 
+/** Host HTTP interface */
+export declare namespace http {
+  function get(url: string): Bytes | null
+}
+
 /** Host crypto utilities interface */
 export declare namespace crypto {
   function keccak256(input: ByteArray): ByteArray
